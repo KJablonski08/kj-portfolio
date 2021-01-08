@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Overlock&display=swap');
+
+body {
+	font-family: 'Overlock', cursive;
+	background-color: #f4f3ee;
+	margin: 0;
+}
+
+header {
+	background-color: #e0afa0;
+	border: 1px solid #e0afa0;
+}
+
+nav {
+	font-family: 'Covered By Your Grace', cursive;
+	margin: 0 auto;
+	width: 80%;
+}
+
+main {
+	margin: 0 10%;
+}
+
+.profile-pic {
+	border-radius: 50%;
+}
+
+footer {
+	display: flex;
+	background-color: #463f3a;
+	color: white;
+	margin: 0 auto;
+	height: 10vh;
+	align-items: center;
+	justify-content: center;
+}
