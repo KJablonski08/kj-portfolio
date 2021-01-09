@@ -8,29 +8,52 @@
   <title>Katie Jablonski</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <h2>KATIE JABLONSKI</h2>
-    </nav>
-  </header>
   <main>
-    <h1>Hi, I'm Katie Jablonski</h1>
-    <div class="profile-pic">
+    <h2>KATIE JABLONSKI</h2>
+    <nav>
+      <ul>
+        <a href="#" class="nav-link"><li>About</li></a>
+        <a href="#" class="nav-link">
+          <li>Portfolio</li>
+        </a>
+        <a href="#" class="nav-link">
+          <li>Contact</li>
+        </a>
+        <a href="#" class="nav-link">
+          <li>Resume</li>
+        </a>
+      </ul>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="profile-pic">
       <img src="./images/Professional Profile Picture copy.png" />
-    </div>
+    </div> -->
   </main>
   <footer>
+    <div class="top icons">
+      <a href='#top'><i data-feather="chevron-up" class="icon"></i></a>
+    </div>
     <div class="icons">
-      <i data-feather="instagram" class="icon"></i>
-      <i data-feather="github" class="icon"></i>
-      <i data-feather="linkedin" class="icon"></i>
-      <i data-feather="mail" class="icon"></i>
+      <a href="https://www.instagram.com/jadiek08/" target="_blank" rel="noreferrer"><i data-feather="instagram" class="icon"></i></a>
+      <a href="https://github.com/KJablonski08" target="_blank" rel="noreferrer"><i data-feather="github" class="icon"></i></a>
+      <a href="https://www.linkedin.com/in/katie-jablonski/" target="_blank" rel="noreferrer"><i data-feather="linkedin" class="icon"></i></a>
+      <a class='mailto' href='mailto:kjablonski08@gmail.com'></a><i data-feather="mail" class="icon"></i></a>
+    </div>
+    <div class="cred">
+      <p>2021 katherinejablonski</p>
     </div>
   </footer>
   
   <script>
     feather.replace()
   </script>
-  <script src="./index.html"></script>
+  <script src="./index.js"></script>
 </body>
 </html>

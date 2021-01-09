@@ -1,21 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Overlock&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 body {
-	font-family: 'Overlock', cursive;
+	font-family: 'Open Sans Condensed', sans-serif;
 	background-color: #f4f3ee;
 	margin: 0;
+	color: #463f3a;
 }
 
-header {
-	background-color: #e0afa0;
-	border: 1px solid #e0afa0;
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+h2 {
+	grid-column: 1 / span 2;
 }
 
 nav {
-	font-family: 'Covered By Your Grace', cursive;
+	font-family: 'Open Sans Condensed', sans-serif;
 	margin: 0 auto;
 	width: 80%;
+}
+
+ul {
+	display: none;
+}
+
+@media only screen and (min-width: 800px) {
+	ul {
+		display: block;
+	}
+
+	.dropdown {
+		display: none;
+	}
+}
+
+.nav-link {
+	color: #463f3a;
+	list-style-type: none;
+	text-decoration: none;
+	justify-content: space-between;
+	display: inline-block;
+	padding: 1%;
+}
+
+.nav-link:hover {
+	text-decoration: underline;
+}
+
+/* DROPDOWN MENU */
+
+.dropbtn {
+	align-items: center;
+	justify-content: center;
+	background-color: #4caf50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+	background-color: #3e8e41;
+}
+
+.dropdown {
+	justify-content: center;
+	align-items: center;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	right: 0;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown a:hover {
+	background-color: #ddd;
+}
+
+.show {
+	display: block;
 }
 
 main {
@@ -26,12 +105,36 @@ main {
 	border-radius: 50%;
 }
 
+a {
+	color: white;
+}
+
+.icons {
+	grid-row: 2;
+	grid-column: 2;
+	text-align: center;
+}
+
+.top {
+	text-align: center;
+	grid-row: 1;
+	grid-column: 2;
+	text-align: center;
+}
+
+.cred {
+	grid-row: 3;
+	grid-column: 3;
+	text-align: right;
+	padding-right: 3%;
+}
+
 footer {
-	display: flex;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	background-color: #463f3a;
 	color: white;
-	margin: 0 auto;
-	height: 10vh;
+	height: 8%;
 	align-items: center;
-	justify-content: center;
 }
