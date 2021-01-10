@@ -16,7 +16,7 @@ window.onclick = function (event) {
 	}
 };
 
-let card = document.querySelector('.card');
+let card = document.querySelectorAll('.card');
 let front = document.querySelector('.front');
 let back = document.querySelector('.back');
 card.addEventListener('click', function () {
