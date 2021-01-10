@@ -135,6 +135,10 @@ footer {
 	margin-top: -15%;
 }
 
+.direction {
+	color: #c79625;
+}
+
 /* CARD */
 
 .cards {
@@ -279,6 +283,10 @@ p {
 
 	.title {
 		margin-top: -6%;
+	}
+
+	.direction {
+		visibility: hidden;
 	}
 
 	@keyframes slide-in {
