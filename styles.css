@@ -125,12 +125,12 @@ footer {
 	background-color: #14312a;
 	padding: 3%;
 	text-align: center;
+	margin: 5% 0;
 }
 
 .title {
 	color: #cd7e59;
 	font-size: 3em;
-	margin-top: -6%;
 	font-family: 'Homemade Apple', cursive;
 	margin-top: -15%;
 }
@@ -232,6 +232,13 @@ p {
 	animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
 	font-weight: 600;
 	margin: 0;
+}
+
+/* CONTACT */
+
+.contact {
+	background-color: #d5b9b1;
+	text-align: center;
 }
 
 /* MEDIA QUERIES  */
