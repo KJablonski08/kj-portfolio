@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.8.2/devicon.min.css">
   <script src="https://unpkg.com/feather-icons"></script>
   <title>Katie Jablonski</title>
 </head>
@@ -13,10 +14,10 @@
     <nav>
       <ul>
         <a href="#" class="nav-link"><li>About</li></a>
-        <a href="#" class="nav-link">
+        <a href="#portfolio" class="nav-link">
           <li>Portfolio</li>
         </a>
-        <a href="#" class="nav-link">
+        <a href="#contact" class="nav-link">
           <li>Contact</li>
         </a>
         <a href="#" class="nav-link">
@@ -33,35 +34,58 @@
       </div>
     </nav>
     </main>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <h3 class="title">Portfolio</h3>
       <div class="cards">
       <div class="card-container">
         <div class="card">
           <div class="front">
+            <h1 class="card-title">
+              Building Futures Blog
+            </h1>
             <img class="image"
               src="https://katiejablonski.com/images/bf.jpg"
               alt="" />
+            <p>Technologies Used:</p>
+            <i class="devicon-bootstrap-plain-wordmark devicon"></i>
+            <i class="devicon-css3-plain-wordmark devicon"></i>
+            <i class="devicon-django-line-wordmark devicon"></i>
+            <i class="devicon-python-plain-wordmark devicon"></i>
+            <i class="devicon-html5-plain-wordmark devicon"></i>
+            <i class="devicon-javascript-plain devicon"></i>
+            <i class="devicon-postgresql-plain-wordmark devicon"></i>
+            <i class="devicon-react-original-wordmark devicon"></i>
           </div>
           <div class="back">
-            <h3 class="synopsis">Building Futures</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam rerum itaque facere tenetur ducimus. Cumque eligendi officia odio, inventore eius sed, est delectus suscipit quis quidem error, ullam nisi eveniet.</p>
-            <div class="btn">Live Demo</div>
-            <div class="btn secondary">Source Code</div>
-            <div class="btn secondary">Source Code</div>
+            <h3 class="synopsis">Building Futures Blog</h3>
+            <p>A blogging application that was created for Building Futures Inc., an IRS authorized 501(c)3. The building futures blog is a place for supporters to get up to date information on the latest projects and updates from directors through blog posts. Directors
+            are able to log in and create new posts.</p>
+            <a href="https://building-futures-inc.herokuapp.com/" target='_blank' rel="noreferrer"><div class="btn">Live Demo</div></a>
+            <a href="https://github.com/KJablonski08/building_futures_react" target="_blank" rel="noreferrer"><div class="btn secondary">Frontend Source Code</div></a>
+            <a href="https://github.com/KJablonski08/building_futures_django" target="_blank" rel="noreferrer"><div class="btn secondary">Backend Source Code</div></a>
           </div>
         </div>
         <div class="card">
           <div class="front">
-            <img class="image" src="https://katiejablonski.com/images/bf.jpg" alt="" />
+            <h1 class="card-title">
+              Loo Loo's Events Portfolio
+            </h1>
+            <img class="image" src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/131156526_4082111061803248_7383127815439649041_o.jpg?_nc_cat=103&ccb=2&_nc_sid=0debeb&_nc_ohc=Pjui1ErDUlgAX9YoITL&_nc_ht=scontent-iad3-1.xx&oh=ac0d59eef6ef766758081f23e5c0c0f8&oe=601DB550" alt="" />
+            <p>Technologies Used:</p>
+            <i class="devicon-bootstrap-plain-wordmark devicon"></i>
+            <i class="devicon-css3-plain-wordmark devicon"></i>
+            <i class="devicon-html5-plain-wordmark devicon"></i>
+            <i class="devicon-javascript-plain devicon"></i>
+            <i class="devicon-react-original-wordmark devicon"></i>
+
           </div>
           <div class="back">
-            <h3 class="synopsis">Building Futures</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam rerum itaque facere tenetur ducimus. Cumque
-              eligendi officia odio, inventore eius sed, est delectus suscipit quis quidem error, ullam nisi eveniet.</p>
-            <div class="btn">Live Demo</div>
-            <div class="btn secondary">Source Code</div>
-            <div class="btn secondary">Source Code</div>
+            <h3 class="synopsis">Loo Loo's Events Portfolio</h3>
+            <p>Loo Loo's Events is a wedding and event planner in Rochester, NY. Planning a wedding can be stressful, but it should be fun.
+            The Loo Loo's Events app is a portfolio page for potential customers to gather information on photos, referrals, and
+            package offerings</p>
+            <a href="https://looloosevents.netlify.app/" target="_blank" rel="noreferrer"><div class="btn">Live Demo</div></a>
+            <a href="https://github.com/KJablonski08/loo-loos-planning-events" target="_blank" rel="noreferrer"><div class="btn secondary">Source Code</div></a>
           </div>
         </div>
         <div class="card">
@@ -117,7 +141,7 @@
           </div>
        </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <h3 class="title">Contact</h3>
         <h2>Let's work together to build something awesome</h2>
         <a href="mailto:kjablonski08@gmail.com"><i data-feather="mail" class="contact-icon"></i></a>

@@ -158,13 +158,27 @@ img {
 .front {
 	transform: rotateY(0deg);
 }
+
+.card-title {
+	animation: slide-in-slow 0.75s;
+	animation: slide-in-slow 0.75s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+	animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
+	font-weight: 600;
+	margin: 0;
+}
+
+.devicon {
+	color: #c79625;
+	font-size: 3em;
+}
+
 .back {
 	transform: rotateY(180deg);
 	opacity: 0;
 	backface-visibility: visible;
 	background: #f4f3ee;
 	color: #c79625;
-	padding: 50px 30px;
+	padding: 20px 20px;
 }
 .card {
 	position: relative;
