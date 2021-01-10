@@ -15,3 +15,18 @@ window.onclick = function (event) {
 		}
 	}
 };
+
+let card = document.querySelector('.card');
+let front = document.querySelector('.front');
+let back = document.querySelector('.back');
+card.addEventListener('click', function () {
+	if ((front.style.opacity = '0')) {
+		back.style.opacity = '1';
+		front.style.opacity = '0';
+		back.style.backfaceVisibility = 'visible';
+	} else if ((front.style.opacity = '')) {
+		back.style.opacity = '0';
+		front.style.opacity = '1';
+		back.style.backfaceVisibility = 'hidden';
+	}
+});
