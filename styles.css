@@ -9,19 +9,19 @@ body {
 
 main {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 5em 20em;
 }
 
 h2 {
-	grid-column: 1 / span 2;
+	grid-column: 1;
+	justify-self: start;
 }
 
 nav {
-	grid-column: 3;
-	align-self: center;
+	grid-column: 2;
 	justify-self: end;
-	width: 80%;
+	width: 50%;
 }
 
 ul {
@@ -51,14 +51,15 @@ button {
 	border: none;
 }
 
+.dropdown {
+	margin-top: 20%;
+}
+
 .dropdown-content {
 	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
 	min-width: 160px;
 	overflow: auto;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	right: 0;
 	z-index: 1;
 }
 
@@ -81,8 +82,16 @@ main {
 	margin: 0 10%;
 }
 
-.profile-pic {
+.cartoon {
+	width: 14em;
 	border-radius: 50%;
+	grid-column: 1;
+	justify-self: center;
+}
+
+.pitch {
+	justify-self: center;
+	align-self: center;
 }
 
 a {
@@ -323,5 +332,18 @@ p {
 			transform: translate3d(0, 0, 0);
 			opacity: 1;
 		}
+	}
+
+	.cartoon {
+		width: 14em;
+		border-radius: 50%;
+		grid-column: 2;
+		justify-self: center;
+		align-self: center;
+	}
+
+	.pitch {
+		justify-self: center;
+		align-self: center;
 	}
 }
