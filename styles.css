@@ -104,6 +104,10 @@ a {
 	text-align: center;
 }
 
+.icon {
+	padding: 2%;
+}
+
 .top {
 	text-align: center;
 	grid-row: 1;
