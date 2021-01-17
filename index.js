@@ -115,9 +115,9 @@ const cards = [
 		frontImg: 'https://github.com/KJablonski08/simon/raw/main/simonGiphy.gif',
 		tech: false,
 		stack: [
+			'devicon-javascript-plain devicon',
 			'devicon-html5-plain-wordmark devicon',
 			'devicon-css3-plain-wordmark devicon',
-			'devicon-javascript-plain devicon',
 		],
 		backSummary: '',
 		demoLink: '',
@@ -131,27 +131,10 @@ new Vue({
 	el: '#flashcard-app',
 	data: {
 		cards: cards,
-		newFront: '',
-		newBack: '',
-		error: false,
 	},
 	methods: {
 		toggleCard: function (card) {
 			card.flipped = !card.flipped;
-		},
-		addNew: function () {
-			if (!this.newFront || !this.newBack) {
-				this.error = true;
-			} else {
-				this.cards.push({
-					front: this.newFront,
-					back: this.newBack,
-					flipped: false,
-				});
-				this.newFront = '';
-				this.newBack = '';
-				this.error = false;
-			}
 		},
 	},
 });
