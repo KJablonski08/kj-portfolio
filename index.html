@@ -45,18 +45,17 @@
         <ul class="flashcard-list">
           <li v-on:click="toggleCard(card)" v-for="(card, index) in cards">
             <transition name="flip">
-              <p v-if="!card.flipped" key="front" class="card">{{card.front}}
-              </p>
-              <p v-else key="back" class="card">{{card.back}}
+              <div v-if="!card.flipped" key="front" class="card">
+                <p class="card-title">{{card.title}}</p>
+                <img v-bind:src="card.frontImg" class="card-img" />
+                <p>Technologies Used:</p>
+                <ul class="devicon-list">
+                  <li v-for="icon in card.stack"><i v-bind:class='icon'></i></li>
+                </ul>
+              </div>
+              <p v-else key="back" class="card">{{card.title}}
               </p>
             </transition>
-            <!-- Alternative method -->
-            <!-- <transition name="flip">
-                  <p v-bind:key="card.flipped" class="card">
-                      {{ card.flipped ? card.back : card.front }}
-                      <span v-on:click="cards.splice(index,1)" class="delete-card">X</span>
-                  </p>
-                </transition> -->
           </li>
         </ul>
       </div>
