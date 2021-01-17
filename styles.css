@@ -204,6 +204,38 @@ li {
 	color: #cd7e59;
 }
 
+.btn {
+	border: 1px solid #cd7e59;
+	border-radius: 5px;
+	background: transparent;
+	display: inline-block;
+	font-size: 17px;
+	padding: 8px 20px 9px 15px;
+	color: #cd7e59;
+	transition: 0.5s;
+	margin: 2px 2px;
+	font-weight: 100;
+}
+.btn.secondary {
+	border-color: #c79625;
+	color: #c79625;
+}
+.btn.secondary:hover {
+	color: white;
+	background: #c79625;
+}
+.btn:hover {
+	background: #cd7e59;
+	color: white;
+}
+
+p {
+	color: #463f3a;
+	font-size: 19px;
+	line-height: 1.5;
+	margin: 0 0 35px;
+}
+
 li:hover {
 	transform: scale(1.1);
 }

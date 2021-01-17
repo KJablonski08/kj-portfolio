@@ -53,8 +53,19 @@
                   <li v-for="icon in card.stack"><i v-bind:class='icon'></i></li>
                 </ul>
               </div>
-              <p v-else key="back" class="card">{{card.title}}
-              </p>
+              <div v-else key="back" class="card">
+                <p class="card-title">{{card.title}}</p>
+                <p class="synopsis">{{card.summary}}</p>
+                <a v-bind:href="card.demoLink" target='_blank' rel="noreferrer">
+                  <div class="btn">Live Demo</div>
+                </a>
+                <a v-bind:href="card.frontendLink" target="_blank" rel="noreferrer">
+                  <div class="btn secondary">Source Code</div>
+                </a>
+                <a v-bind:href="card.backendLink" target="_blank" rel="noreferrer">
+                  <div v-show="card.backendLink" class="btn secondary">Backend Source Code</div>
+                </a>
+              </div>
             </transition>
           </li>
         </ul>
