@@ -16,19 +16,100 @@ window.onclick = function (event) {
 	}
 };
 
-let cards = document.querySelectorAll('.card');
-let front = document.querySelector('.front');
-let back = document.querySelector('.back');
-cards.forEach((card) => {
-	card.addEventListener('click', function () {
-		if ((front.style.opacity = '0')) {
-			back.style.opacity = '1';
-			front.style.opacity = '0';
-			back.style.backfaceVisibility = 'visible';
-		} else if ((front.style.opacity = '')) {
-			back.style.opacity = '0';
-			front.style.opacity = '1';
-			back.style.backfaceVisibility = 'hidden';
-		}
-	});
+const cards = [
+	{
+		title: 'The "First Computer Programmer"',
+		frontImg: 'Ada Lovelace',
+		tech: false,
+		stack: '',
+		backSummary: '',
+		demoLink: '',
+		frontendLink: '',
+		backendLink: '',
+		flipped: false,
+	},
+	{
+		title: 'The "First Computer Programmer"',
+		frontImg: 'Ada Lovelace',
+		tech: false,
+		stack: '',
+		backSummary: '',
+		demoLink: '',
+		frontendLink: '',
+		backendLink: '',
+		flipped: false,
+	},
+	{
+		title: 'The "First Computer Programmer"',
+		frontImg: 'Ada Lovelace',
+		tech: false,
+		stack: '',
+		backSummary: '',
+		demoLink: '',
+		frontendLink: '',
+		backendLink: '',
+		flipped: false,
+	},
+	{
+		title: 'The "First Computer Programmer"',
+		frontImg: 'Ada Lovelace',
+		tech: false,
+		stack: '',
+		backSummary: '',
+		demoLink: '',
+		frontendLink: '',
+		backendLink: '',
+		flipped: false,
+	},
+	{
+		title: 'The "First Computer Programmer"',
+		frontImg: 'Ada Lovelace',
+		tech: false,
+		stack: '',
+		backSummary: '',
+		demoLink: '',
+		frontendLink: '',
+		backendLink: '',
+		flipped: false,
+	},
+	{
+		title: 'The "First Computer Programmer"',
+		frontImg: 'Ada Lovelace',
+		tech: false,
+		stack: '',
+		backSummary: '',
+		demoLink: '',
+		frontendLink: '',
+		backendLink: '',
+		flipped: false,
+	},
+];
+
+new Vue({
+	el: '#flashcard-app',
+	data: {
+		cards: cards,
+		newFront: '',
+		newBack: '',
+		error: false,
+	},
+	methods: {
+		toggleCard: function (card) {
+			card.flipped = !card.flipped;
+		},
+		addNew: function () {
+			if (!this.newFront || !this.newBack) {
+				this.error = true;
+			} else {
+				this.cards.push({
+					front: this.newFront,
+					back: this.newBack,
+					flipped: false,
+				});
+				this.newFront = '';
+				this.newBack = '';
+				this.error = false;
+			}
+		},
+	},
 });

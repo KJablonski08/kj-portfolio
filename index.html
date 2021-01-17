@@ -12,7 +12,7 @@
   <main>
     <h2>KATIE JABLONSKI</h2>
     <nav>
-      <ul>
+      <ul class="links">
         <a href="#" class="nav-link"><li>About</li></a>
         <a href="#portfolio" class="nav-link">
           <li>Portfolio</li>
@@ -25,7 +25,7 @@
         </a>
       </ul>
       <div class="dropdown">
-        <button onclick="myFunction()"><i data-feather="menu" class="icon dropbtn" ></i></button>
+        <button onclick="myFunction()"><i data-feather="menu"></i></button>
         <div id="myDropdown" class="dropdown-content">
           <a href="#about">About</a>
           <a href="#portfolio">Portfolio</a>
@@ -41,9 +41,25 @@
     </main>
     <section class="portfolio" id="portfolio">
       <h3 class="title">Portfolio</h3>
-
-      
-
+      <div id="flashcard-app" class="container">
+        <ul class="flashcard-list">
+          <li v-on:click="toggleCard(card)" v-for="(card, index) in cards">
+            <transition name="flip">
+              <p v-if="!card.flipped" key="front" class="card">{{card.front}}
+              </p>
+              <p v-else key="back" class="card">{{card.back}}
+              </p>
+            </transition>
+            <!-- Alternative method -->
+            <!-- <transition name="flip">
+                  <p v-bind:key="card.flipped" class="card">
+                      {{ card.flipped ? card.back : card.front }}
+                      <span v-on:click="cards.splice(index,1)" class="delete-card">X</span>
+                  </p>
+                </transition> -->
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="contact" id="contact">
         <h3 class="title">Contact</h3>
@@ -72,7 +88,7 @@
     <script>
       feather.replace()
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
