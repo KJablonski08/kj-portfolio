@@ -115,14 +115,6 @@ a {
 	text-align: center;
 }
 
-.cred {
-	color: white;
-	grid-row: 3;
-	grid-column: 3;
-	text-align: right;
-	padding-right: 3%;
-}
-
 footer {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
