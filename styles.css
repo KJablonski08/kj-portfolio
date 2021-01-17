@@ -196,6 +196,10 @@ li {
 	color: #cd7e59;
 }
 
+.synopsis {
+	margin: 0.5em 1.25em;
+}
+
 .btn {
 	border: 1px solid #cd7e59;
 	border-radius: 5px;
