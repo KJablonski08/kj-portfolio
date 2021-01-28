@@ -90,7 +90,7 @@ const cards = [
 		],
 		summary:
 			'A collectors app. Users are able to log in, using their email or Facebook, and keep track of their collections. A user has the option to keep their collection anonymous or to post publicly. Each public comic book entry has a comments section for users to comment on each others collections and communicate about the story lines',
-		demoLink: 'https://comic-book-room.herokuapp.com/',
+		demoLink: 'https://comicbookroom.herokuapp.com/',
 		frontendLink: 'https://github.com/KJablonski08/comic_book_room',
 		backendLink: false,
 		flipped: false,
