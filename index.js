@@ -38,24 +38,6 @@ const cards = [
 		flipped: false,
 	},
 	{
-		title: "Loo Loo's Events Portfolio",
-		frontImg:
-			'https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/131156526_4082111061803248_7383127815439649041_o.jpg?_nc_cat=103&ccb=2&_nc_sid=0debeb&_nc_ohc=Pjui1ErDUlgAX9YoITL&_nc_ht=scontent-iad3-1.xx&oh=ac0d59eef6ef766758081f23e5c0c0f8&oe=601DB550',
-		stack: [
-			'devicon-react-original-wordmark devicon',
-			'devicon-css3-plain-wordmark devicon',
-			'devicon-html5-plain-wordmark devicon',
-			'devicon-javascript-plain devicon',
-			'devicon-bootstrap-plain-wordmark devicon',
-		],
-		summary:
-			"Loo Loo's Events is a wedding and event planner in Rochester, NY. Planning a wedding can be stressful, but it should be fun. The Loo Loo's Events app is a portfolio page for potential customers to gather information on photos, referrals, and package offerings",
-		demoLink: 'https://looloosevents.netlify.app/',
-		frontendLink: 'https://github.com/KJablonski08/loo-loos-planning-events',
-		backendLink: false,
-		flipped: false,
-	},
-	{
 		title: 'Gitwrap',
 		frontImg:
 			'http://git-wrap.herokuapp.com/static/media/gitwrapLogo.50e6de45.png',
