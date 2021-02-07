@@ -38,28 +38,6 @@ const cards = [
 		flipped: false,
 	},
 	{
-		title: 'Gitwrap',
-		frontImg:
-			'http://git-wrap.herokuapp.com/static/media/gitwrapLogo.50e6de45.png',
-		stack: [
-			'devicon-mongodb-plain-wordmark devicon',
-			'devicon-express-original-wordmark devicon',
-			'devicon-react-original-wordmark devicon',
-			'devicon-nodejs-plain-wordmark devicon',
-			'devicon-css3-plain-wordmark devicon',
-			'devicon-html5-plain-wordmark devicon',
-			'devicon-bootstrap-plain-wordmark devicon',
-			'devicon-javascript-plain devicon',
-			'devicon-postgresql-plain-wordmark devicon',
-		],
-		summary:
-			'A gift guide application. The app begins with categories (such as "tech", "music", "movies", etc...) and price range options to browse. Choose a gift from the list to read more details and find a purchase link. You can add your gift to a personal favorites list. This will allow you to save your gift ideas for another time',
-		demoLink: 'http://git-wrap.herokuapp.com/',
-		frontendLink: 'https://github.com/anonymous-animals/gitwrap-frontend',
-		backendLink: 'https://github.com/anonymous-animals/gitwrap-backend',
-		flipped: false,
-	},
-	{
 		title: 'Comic Book Room',
 		frontImg: './images/background.jpg',
 		stack: [
@@ -105,6 +83,28 @@ const cards = [
 		demoLink: 'kjablonski08.github.io/simon/',
 		frontendLink: 'https://github.com/KJablonski08/simon',
 		backendLink: false,
+		flipped: false,
+	},
+	{
+		title: 'Gitwrap',
+		frontImg:
+			'http://git-wrap.herokuapp.com/static/media/gitwrapLogo.50e6de45.png',
+		stack: [
+			'devicon-mongodb-plain-wordmark devicon',
+			'devicon-express-original-wordmark devicon',
+			'devicon-react-original-wordmark devicon',
+			'devicon-nodejs-plain-wordmark devicon',
+			'devicon-css3-plain-wordmark devicon',
+			'devicon-html5-plain-wordmark devicon',
+			'devicon-bootstrap-plain-wordmark devicon',
+			'devicon-javascript-plain devicon',
+			'devicon-postgresql-plain-wordmark devicon',
+		],
+		summary:
+			'A gift guide application. The app begins with categories (such as "tech", "music", "movies", etc...) and price range options to browse. Choose a gift from the list to read more details and find a purchase link. You can add your gift to a personal favorites list. This will allow you to save your gift ideas for another time',
+		demoLink: 'http://git-wrap.herokuapp.com/',
+		frontendLink: 'https://github.com/anonymous-animals/gitwrap-frontend',
+		backendLink: 'https://github.com/anonymous-animals/gitwrap-backend',
 		flipped: false,
 	},
 ];
